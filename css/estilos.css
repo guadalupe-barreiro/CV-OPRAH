@@ -8,6 +8,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+
+body{
+	font-family: "roboto";
+}
+
 html{
 	font-size: 20px;
 	color:#000000;
@@ -23,6 +28,12 @@ header{
 	justify-content: center;
 }
 
+
+#formulario{
+	border-radius: 10px;
+	border: none;
+	padding: 5px;
+}
 
 form{
 	display: flex;
@@ -73,10 +84,14 @@ li a:hover {
 .fotooprah{
 	background-color:#FFFFFF;
 	width: 40%;
-	margin: 2%;
-	text-align: center;
-	padding: 2%;
-	font-size: 30px;
+	margin-left: 2%;
+	margin-top: 2%;
+	margin-right: 2%;
+	padding-left: 2%;
+	padding-top: 2%;
+	padding-right: 2%;
+	display: flex;
+    align-items: flex-end;
 	animation: f 4s infinite;
 }
 
@@ -283,8 +298,7 @@ p{
 		max-width:1200px;
 		}
 	.foto{
-		width: 70%;
-		padding-top: 10%;
+		width: 100%;
 	}
 	.capacidades{
 		text-align: end;
@@ -298,26 +312,24 @@ p{
 		padding-bottom: 2%;
 	}
 	
-	.fotooprah{
-	    padding-top: 10%;
-	}
-	
-	.foto{
-		width:90%;
-	}
-	
 	.contenedorC{
 		justify-content:center;
 	}
+	
 	.textoA{
-		width: 60%;
+		width: 100%;
+		padding-left: 5%;
 	}
+	
+	.textoB{
+		width: 100%;
+		padding-left: 5%;
+	}
+	
 	.animacioncaja{
 		width: 60%;
 	}
-	.textoB{
-		width: 60%;
-	}
+	
 }
 
 /* Pantalla media a chica*/
@@ -349,6 +361,11 @@ p{
 		padding-top: 0px;
 	}
 	
+	h2{
+		padding-top: 5%;
+		padding-bottom: 5%;
+	}
+	
 	.primertexto{
 		width: 80%;
 	}
@@ -362,31 +379,44 @@ p{
 	.contenedorC{
 		justify-content:center;
 	}
+	
 	.textoA{
-		width: 60%;
+		width: 100%;
+		padding-left: 5%;
 	}
+	
+	.textoB{
+		width: 100%;
+		padding-left: 5%;
+	}
+	
 	.animacioncaja{
 		width: 60%;
 	}
-	.textoB{
-		width: 60%;
-	}
+	
 }
 
 /* Pantalla chica*/
 @media screen and (min-width:481px) and (max-width:560px){
 	
+	header{
+		width: 30%;
+		padding-left: 30%;
+		flex-direction:column;
+		justify-content: center;
+	}
+	
 	.search{
-		padding-bottom: 5%;
+		padding-bottom: 10%;
+		justify-content: center;
 	}
 	
 	.bar{
-	width: 90%;
-	padding-left: 10%;
-	display: flex;
-	flex-direction: row;
+	width: 80%;
+	flex-direction:column;
 	flex-wrap: wrap;
 	justify-content: center;
+	padding-left: 10%;
    
 }
 	
@@ -404,6 +434,8 @@ p{
 		text-indent: 100%;
 		white-space: nowrap;
 		overflow: hidden;
+		padding-top:0%;
+		padding-bottom:0%;
 	}
 	
 	.billonaria{
@@ -416,6 +448,10 @@ p{
 		justify-content:center;
 	}
 	
+	h2{
+		padding-top: 10%;
+		padding-bottom: 10%;
+	}
 	.animaciones{
 		justify-content: space-around;
 	}
@@ -425,26 +461,34 @@ p{
 	}
 	
 	.textoA{
-		width: 60%;
+		width: 100%;
+		padding-left: 5%;
 	}
+	
+	.textoB{
+		width: 100%;
+		padding-left: 5%;
+	}
+	
 	.animacioncaja{
 		width: 80%;
 	}
-	.textoB{
-		width: 60%;
-	}
+	
 }
 
 /* Pantalla muy chica*/
 @media screen and (min-width:0px) and (max-width:480px){
 	
 	header{
+		width: 30%;
+		padding-left: 30%;
 		flex-direction:column;
 		justify-content: center;
 	}
 	
 	.search{
-		padding-bottom: 10%;
+		padding-bottom: 30%;
+		justify-content: center;
 	}
 	
 	.bar{
@@ -452,11 +496,12 @@ p{
 	flex-direction:column;
 	flex-wrap: wrap;
 	justify-content: center;
-   
+	padding-left: 10%;
+    padding-bottom: 30%;
 }
 	
 	.fotooprah{
-	   width:50%;
+	   width:70%;
 	}
 	
 	
@@ -466,12 +511,15 @@ p{
 	
 	h1{text-align: start;
 	font-size: 40px;
-	padding-bottom:0px;}
+	padding-bottom:0;
+	margin-bottom: 0;}
 	
 	.actriz{
 		text-indent: 100%;
 		white-space: nowrap;
 		overflow: hidden;
+		padding-top:0%;
+		padding-bottom:0%;
 	}
 	
 	.billonaria{
@@ -479,8 +527,26 @@ p{
 		white-space: nowrap;
 		overflow: hidden;
 	}
+	
+
 	.contenedorC{
 		justify-content:center;
+		margin-top: 0;
+	}
+	
+	h2{
+		padding-top: 10%;
+		padding-bottom: 10%;
+	}
+	
+	.textoA{
+		width: 100%;
+		padding-left: 5%;
+	}
+	
+	.textoB{
+		width: 100%;
+		padding-left: 5%;
 	}
 	
 	.animaciones{
@@ -495,13 +561,7 @@ p{
 		text-align: center;
 	}
 	
-	.textoA{
-		width: 60%;
-	}
 	.animacioncaja{
 		width: 80%;
 	}
-	.textoB{
-		width: 60%;
-	}
-}
+	
