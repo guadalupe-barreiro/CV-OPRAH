@@ -122,6 +122,34 @@ li a:hover {
 	font-size: 30px;
 }
 
+.noseve{
+	background-color:#FFFFFF;
+	display: flex;
+	flex-direction:column;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.nosevetit{
+	margin: 0%;
+	padding: 0%;
+	text-align:center;
+	text-indent: 100%;
+		white-space: nowrap;
+		overflow: hidden;
+}
+
+.nosevesubtit{
+	margin: 0%;
+	padding: 0%;
+	text-align: center;
+	text-indent: 100%;
+		white-space: nowrap;
+		overflow: hidden;
+}
+
+
+
 h1{
 	text-align:start;
 	font-size: 50px;
@@ -291,6 +319,59 @@ p{
 	font-size: 30px;
 }
 
+
+.contenedorD{
+	display: flex;
+	flex-direction:column;
+	flex-wrap: wrap;
+	justify-content: center;
+
+}
+
+.datotit{
+	text-align: center
+}
+
+.datosfotos{
+	display: flex;
+	flex-direction:row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.dato1{
+	width: 33%;
+	display: flex;
+	flex-direction:column;
+	justify-content: center;
+}
+
+.datofoto1{width: 30%;padding-left: 35%;}
+
+.dato2{
+	width: 33%;
+	display: flex;
+	flex-direction:column;
+	justify-content: center;
+}
+
+.datofoto2{width: 30%;padding-left: 35%;}
+
+.dato3{
+	width: 33%;
+	display: flex;
+	flex-direction:column;
+	justify-content: center;
+}
+
+.datofoto3{width: 30%;padding-left: 35%;}
+
+.datotexto{
+	text-align: center;
+	font-weight: bold;
+}
+
+
 /* Pantalla grande*/
 @media screen and (min-width:961px) and (max-width:1200px){
 	
@@ -312,6 +393,39 @@ p{
 		padding-bottom: 2%;
 	}
 	
+	/* instertar un titulo y sub titulo arriba de contenedor a*/
+.noseve{
+		width: 100%;
+	flex-direction:row;
+	flex-wrap: wrap;
+	}	
+.nosevetit{
+	text-indent: 0;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	height: 50px;
+	
+}
+.nosevesubtit{
+	width: 90%;
+	text-indent: 0;
+	white-space:normal;
+	
+}
+	h1{
+		height: 0px;
+		text-indent: 100%;
+		white-space: nowrap;
+		overflow: hidden;
+	}	
+	
+	.actriz{
+		text-indent: 100%;
+		white-space: nowrap;
+		overflow: hidden;
+	}
+
+
 	.contenedorC{
 		justify-content:center;
 	}
@@ -319,6 +433,15 @@ p{
 	.textoA{
 		width: 100%;
 		padding-left: 5%;
+	}
+	.fotooprah{
+		height: 250px;
+	}
+	.zoomIt{height: 0px}
+	.actriz{height: 0px}
+	.billonaria{
+		height: 50px;
+		
 	}
 	
 	.textoB{
@@ -335,6 +458,9 @@ p{
 /* Pantalla media a chica*/
 @media screen and (min-width:561px) and (max-width:754px){
 	
+	header{
+		height: 10px;
+	}
 	.search{
 		padding-bottom: 2%;
 	}
@@ -342,28 +468,33 @@ p{
 	.bar{
 	width: 90%;
 	padding-left: 10%;
+	padding-top: 5%;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
    
 }
-	
-	.fotooprah{
-	    padding-top: 5%;
+	.contenedorA{
+		flex-wrap:wrap-reverse;
 	}
 	
+	.fotooprah{
+		padding-top: 0%;
+	}
 	.foto{
 		width:100%;
 	}
 	
 	h1{
-		padding-top: 0px;
+		padding-top: 5%;
+		text-align: center;
 	}
 	
 	h2{
-		padding-top: 5%;
-		padding-bottom: 5%;
+		padding-top: 0%;
+		padding-bottom: 2%;
+		text-align: center;
 	}
 	
 	.primertexto{
@@ -374,9 +505,11 @@ p{
 		text-indent: 100%;
 		white-space: nowrap;
 		overflow: hidden;
+		height: 0px;
 	}
 	
 	.contenedorC{
+		padding-top: 5%;
 		justify-content:center;
 	}
 	
@@ -417,8 +550,16 @@ p{
 	flex-wrap: wrap;
 	justify-content: center;
 	padding-left: 10%;
-   
+	padding-top: 5%;
+	
 }
+	
+	.nosevetit{height: 0px;}
+	.nosevesubtit{height: 0px;}
+	
+	.contenedorA{
+		flex-wrap:wrap-reverse;
+	}
 	
 	.fotooprah{
 	   width:50%;
@@ -428,7 +569,10 @@ p{
 		width: 80%;
 	}
 	
-	h1{text-align: center;padding: 0px; margin: 0px;}
+	h1{
+		text-align: center;
+		padding: 2%; 
+		margin: 0px;}
 	
 	.actriz{
 		text-indent: 100%;
@@ -436,12 +580,14 @@ p{
 		overflow: hidden;
 		padding-top:0%;
 		padding-bottom:0%;
+		height: 0px;
 	}
 	
 	.billonaria{
 		text-indent: 100%;
 		white-space: nowrap;
 		overflow: hidden;
+		height: 0px;
 	}
 	
 	.contenedorC{
@@ -500,6 +646,12 @@ p{
     padding-bottom: 30%;
 }
 	
+	.nosevetit{height: 0px;}
+	.nosevesubtit{height: 0px;}
+	
+	.contenedorA{
+		flex-wrap:wrap-reverse;
+	}
 	.fotooprah{
 	   width:70%;
 	}
@@ -520,12 +672,14 @@ p{
 		overflow: hidden;
 		padding-top:0%;
 		padding-bottom:0%;
+		height: 0px;
 	}
 	
 	.billonaria{
 		text-indent: 100%;
 		white-space: nowrap;
 		overflow: hidden;
+		height: 0px;
 	}
 	
 
