@@ -123,6 +123,7 @@ li a:hover {
 }
 
 .noseve{
+	height: 0px;
 	background-color:#FFFFFF;
 	display: flex;
 	flex-direction:column;
@@ -131,6 +132,7 @@ li a:hover {
 }
 
 .nosevetit{
+	height: 0px;
 	margin: 0%;
 	padding: 0%;
 	text-align:center;
@@ -140,6 +142,7 @@ li a:hover {
 }
 
 .nosevesubtit{
+	height: 0px;
 	margin: 0%;
 	padding: 0%;
 	text-align: center;
@@ -422,7 +425,6 @@ p{
 @media screen and (min-width:961px) and (max-width:1200px){
 	
 	
-	
 	.contenedorA{
 		max-width:1200px;
 		}
@@ -442,6 +444,10 @@ p{
 
 /* Pantalla Media*/
 @media screen and (min-width:755px) and (max-width:960px){
+	
+	.noseve{height: 180px;}
+	.nosevetit{height:  50px;}
+	.nosevesubtit{height:  90px;}
 	
 	.search{
 		padding-bottom: 2%;
@@ -589,7 +595,7 @@ p{
 @media screen and (min-width:561px) and (max-width:754px){
 	
 	header{
-		height: 10px;
+		height: 100px;
 	}
 	.search{
 		padding-bottom: 2%;
